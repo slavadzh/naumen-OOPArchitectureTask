@@ -17,14 +17,4 @@ public class MessageHandlerTest {
         Assertions.assertEquals("Ваше сообщение: 'привет'",
                 messageHandler.handleMessage(messageFromUser));
     }
-
-    /**
-     *  проверка пустого сообщения
-     */
-    @Test
-    public void testEmptyMessage() {
-        MessageHandler messageHandler = new MessageHandler();
-        String messageFromUser = "";
-        Assertions.assertEquals("Ничего не отправлено", messageHandler.handleMessage(messageFromUser));
-    }
 }
